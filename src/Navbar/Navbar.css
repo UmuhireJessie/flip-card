@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.logoTitle {
+    color: #302e4d;
+    font-weight: 700;
+    padding: 11px 20px;
+    font-size: 28px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.logoTitle span {
+    font-family: 'Clicker Script', cursive;
+}
+nav {
+  background-color: #ffff;
+  border-bottom: 1px rgb(214, 214, 214) solid;
+  z-index: 5;
+  overflow: hidden;
+}
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger {
+  height: 25px;
+  width: 30px;
+  color: #1306c9;
+  cursor: pointer;
+  display: none;
+}
+.hamburger:active {
+  opacity: 0;
+}
+
+.logo {
+  top: 0px;
+}
+
+.navItem ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  color: #302e4d;
+  font-size: 18px;
+}
+.navItem ul li a:hover,
+.navItem ul li a.active {
+  color: #1306c9;
+}
+
+.navItem ul li a.login,
+ul li a.login.active {
+  background-color: #1306c9;
+  color: #ffff;
+  padding: 6px 20px;
+  border-radius: 20px;
+}
+.navItem ul li a.login:hover,
+ul li a.login.active:hover {
+  color:  #1306c9;
+  background-color: #ffff;
+  border: 1px solid #1306c9;
+  padding: 6px 20px;
+  border-radius: 20px;
+}
+.navItem ul li a {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  color: #302e4d;
+  font-weight: 200;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 620px) {
+  .navItem {
+    display: block;
+    right: -120%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    position: absolute;
+    padding: 1rem;
+    margin-top: 70px;
+    top: 0px;
+    height: 100vh;
+  }
+  .navItem.active {
+    height: 100vh;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    display: block;
+    background-color: #090452;;
+    color: #ffff;
+    right: 0px;
+    top: 0px;
+    float: right;
+    position: absolute;
+    padding: 1rem;
+    margin-top: 70px;
+    overflow: visible;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .close {
+    height: 15px;
+    width: 30px;
+    color: #1306c9;
+    cursor: pointer;
+  }
+
+  .nav ul li {
+    display: flex;
+    margin-right: 12px;
+    cursor: pointer;
+    align-items: baseline;
+    color: #302e4d;
+    padding-top: 1rem;
+  }
+  ul li a.login {
+    background-color: #1306c9;
+    color: #ffff;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+  }
+  ul li a.login:hover {
+    color: #1306c9;
+    /* border-bottom: 3px solid #1306c9; */
+    padding: 1rem 2rem;
+    border-radius: 15px;
+  }
+  ul li a.login.active {
+    color: #ffff;
+    border-bottom: 3px solid #1306c9;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+  }
+  ul li a.login.active:hover {
+    color: #ffff;
+    border-bottom: 3px solid #1306c9;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+  }
+  ul li a {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: #ffff !important;
+    font-weight: 200;
+  }
+  ul li a.active {
+    color: #1306c9;
+    border-bottom: 3px solid #1306c9;
+    padding: 1rem 1rem;
+  }
+  ul li a:hover {
+    padding: 1rem 1rem;
+    background-color: #1306c9;
+    color: #ffff;
+    border-bottom: 3px solid gray;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) and (min-width: 620px) {
+  .nav {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav ul li {
+    display: inline-block;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+  .navItem ul li a.login {
+    background-color: #1306c9;
+    color: #ffff;
+    padding: 0.5rem 1rem;
+    border-radius: 7.5px;
+  }
+  .navItem ul li a.login:hover {
+    color: #ffff;
+    border-bottom: 1.5px solid #1306c9;
+    padding: 0.5rem 1rem;
+    border-radius: 7.5px;
+  }
+  .navItem ul li a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    color: var(--black);
+    font-weight: 200;
+  }
+  .navItem ul li a.active {
+    color: #1306c9;
+    border-bottom: 1.5px solid #1306c9;
+    padding: 0.5rem 0.5rem;
+  }
+  .navItem ul li a:hover {
+    padding: 0.5rem 0.5rem;
+    background-color: #1306c9;
+    color: #ffff;
+    border-bottom: 1.5px solid gray;
+  }
+}

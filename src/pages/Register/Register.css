@@ -1,0 +1,61 @@
+.register-form{
+    margin-top: 7em;
+    width: 32%;
+    margin-left: 34%;
+    padding: 10px 25px 25px;
+    background: #eeeefc;
+    outline: 1px solid rgb(233, 233, 233);
+    border-radius: 10px;
+}
+.register-form .register-title{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 27px;
+    color: #1306c9;
+    margin-bottom: 20px;
+}
+.register-form .heading-input{
+    font-size: 18px;
+    padding-left: 10px;
+    color: #302e4d;
+}
+input,
+input::-webkit-input-placeholder {  
+    font-size: 16px;
+    line-height: 2em;
+    padding-left: 5px;
+    font-family: 'sans-serif';
+}
+.register-form .form-control{
+    width: 95%;
+    border-radius: 15px;
+    border: 1.5px solid #c0c0c5;
+    font-size: 16px;
+    color: #302e4d;
+    margin-left: 9px;
+    margin-bottom: 17px;
+}
+.register-form .signup-option{
+    color: #302e4d;
+}
+.register-form .signup-option a{
+    color:  #1306c9;
+    font-weight: 400;
+}
+.log{
+    border: none;
+    padding: 4px 20px;
+    font-family: 'sans-serif';
+    font-weight: 400;
+    margin-left: 80%;
+    font-size: 14px;
+    color: #ffff;
+    text-align: center;
+    background-color:  #1306c9;;
+    border-radius: 13px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15)
+}
