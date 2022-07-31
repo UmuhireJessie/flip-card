@@ -1,0 +1,44 @@
+.card-bg {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 77.035vh;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  overflow: hidden;
+  background: rgb(248, 251, 255) ;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.allCards {
+  margin-left: 6em;
+  margin-top: 3em;
+  width: 100%;
+  flex: 0 0 20%;
+}
+.card {
+  margin-bottom: 1em;
+  outline: 1px solid #c9c4c4;
+  display: inline-block;
+  margin-right: 2em;
+  padding: 1em;
+}
+.card .question,
+.card .answer {
+  background: rgb(0, 89, 255);
+  padding: 2em;
+}
+.card .question h1,
+.card .answer h1 {
+  margin-bottom: 15px;
+}
+.card .question .btn,
+.card .answer .btn {
+  margin-top: 1.5em;
+  padding: 7px 14px;
+  background: rgb(41, 32, 82);
+  border: none;
+  color: #f2f2f2;
+  border-radius: 7px;
+}
