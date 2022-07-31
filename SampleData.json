@@ -1,0 +1,14 @@
+{
+    "AllCards": [
+        {
+            "id": 1,
+            "question": "What is ICT in full?",
+            "answer": "Information Communication Technology"
+        },
+        {
+            "id": 2,
+            "question": "What is IT in full?",
+            "answer": "Information Technology"
+        }
+    ]
+}

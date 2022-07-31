@@ -192,34 +192,10 @@ ul li a.login.active:hover {
     margin-right: 6px;
     cursor: pointer;
   }
-
-  .navItem ul li a.login {
-    background-color: #1306c9;
-    color: #ffff;
-    padding: 0.5rem 1rem;
-    border-radius: 7.5px;
-  }
-  .navItem ul li a.login:hover {
-    color: #ffff;
-    border-bottom: 1.5px solid #1306c9;
-    padding: 0.5rem 1rem;
-    border-radius: 7.5px;
-  }
   .navItem ul li a {
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     color: var(--black);
     font-weight: 200;
-  }
-  .navItem ul li a.active {
-    color: #1306c9;
-    border-bottom: 1.5px solid #1306c9;
-    padding: 0.5rem 0.5rem;
-  }
-  .navItem ul li a:hover {
-    padding: 0.5rem 0.5rem;
-    background-color: #1306c9;
-    color: #ffff;
-    border-bottom: 1.5px solid gray;
   }
 }
