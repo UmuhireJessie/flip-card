@@ -1,5 +1,19 @@
 .table-card {
-  margin-top: 8em;
+  margin-top: 3em;
+}
+.btn-create {
+  margin-top: 7em;
+  margin-left: 15em;
+  padding: 7px 13px;
+  color:aliceblue;
+  background: #0a036b;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-create:hover {
+  background: #1306c9;
 }
 .table {
   margin-left: auto;

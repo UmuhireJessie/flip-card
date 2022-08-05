@@ -1,0 +1,137 @@
+.main-add {
+  position: absolute;
+  margin-top: -13%;
+  z-index: 4;
+  margin-left: 30%;
+  width: 40%;
+  height: max-content;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -1px 1px 17px #1306c9;
+}
+
+.close-icon {
+  margin-top: 9px;
+  right: 0;
+  position: absolute;
+  margin-right: 9px;
+  cursor: pointer;
+  color: #0b0377;
+}
+.close-icon:hover {
+  color: red;
+}
+.error {
+  color: red;
+}
+
+/* A popup */
+.card-create {
+  margin-top: 1rem;
+  width: 100%;
+  padding-bottom: 2em;
+}
+.create-title {
+  text-align: center;
+  padding: 25px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(73, 73, 73, 0.72);
+}
+.input-question,
+.input-answer {
+  margin-left: 3.5em;
+  width: 80%;
+  padding: 10px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+.input-answer {
+  margin-top: 1em;
+}
+.btn-save {
+  border-radius: 5px;
+  border-style: none;
+  color: #ffffff;
+  background-color: #0b0377;
+  padding: 8px 45px;
+  margin-top: 3em;
+  margin-left: 16em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-save:hover {
+  background-color: #1306c9;
+}
+.btn-update {
+  margin-top: 2em;
+  margin-left: 17em;
+  border-radius: 5px;
+  padding: 7px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn-save {
+    margin-left: 19em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-add {
+    margin-left: 10%;
+    position: relative;
+  }
+  .btn-save,
+  .btn-update {
+    margin-left: 14em;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .main-add {
+    margin-left: 7em;
+    width: 70%;
+  }
+  .btn-save {
+    margin-left: 12em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .btn-save {
+    margin-left: 12em;
+  }
+  .main-add {
+    margin-left: 4em;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .btn-save,
+  .btn-update {
+    margin-left: 8em;
+  }
+  .main-add {
+    margin-left: 2.5em;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn-save {
+    margin-left: 6em;
+  }
+  .main-add {
+    margin-left: 2em;
+    width: 85%;
+  }
+  .card {
+    margin-top: 5em;
+  }
+  .create-title {
+    font-size: 16px;
+  }
+}

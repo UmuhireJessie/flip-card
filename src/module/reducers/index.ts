@@ -1,7 +1,7 @@
-import counterReducer from "./counterreducer";
+import cardReducer from "./CardReducer";
 import { combineReducers } from "redux";
 const allReducers = combineReducers({
-  counter: counterReducer,
+  cardReducer: cardReducer,
 });
 
 export default allReducers;
