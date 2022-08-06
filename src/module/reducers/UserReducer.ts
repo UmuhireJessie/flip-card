@@ -1,6 +1,5 @@
 import {
-    POST_CARD,
-    GET_ALL_CARDS
+    SIGN_UP_USER
   } from "../index";
   
   const initialState = {
@@ -11,13 +10,7 @@ import {
   
   export default (state = initialState, { type, payload }) => {
     switch (type) {
-      case GET_ALL_CARDS:
-        return {
-          ...state,
-          isLoaded: true,
-          data: payload,
-        };
-      case POST_CARD:
+      case SIGN_UP_USER:
         return {
           ...state,
           isLoaded: true,

@@ -2,7 +2,7 @@ import "./Modals.css";
 import { ImCross } from "react-icons/im";
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
-import { updateUser } from "../../../module/actions/CardActions";
+import { updateCard } from "../../../module/actions/CardActions";
 import { toast, ToastContainer } from "react-toastify";
 
 function Update(props) {
@@ -23,9 +23,9 @@ function Update(props) {
         question: isQuestion,
         answer: isAnswer,
       };
-      props.updateUser(Data, card.id);
+      props.updateCard(Data, card.id);
       toast.info("Card updated Successfully");
-      props.setUpdateUser(false);
+      props.setUpdate(false);
     } else {
       toast.error("Fill missing record");
     }
@@ -76,5 +76,5 @@ function Update(props) {
 }
 
 export default connect(null, {
-  updateUser: updateUser,
+  updateCard: updateCard,
 })(Update);

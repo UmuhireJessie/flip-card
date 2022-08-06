@@ -2,7 +2,7 @@ import "./Modals.css";
 import { ImCross } from "react-icons/im";
 import { connect } from "react-redux";
 import { useState } from "react";
-import { postUser } from "../../../module/actions/CardActions";
+import { postCard } from "../../../module/actions/CardActions";
 import { toast } from "react-toastify";
 
 function CreateQuestion(props) {
@@ -28,7 +28,7 @@ function CreateQuestion(props) {
                 question: isQuestion,
                 answer: isAnswer,
             };
-            props.postUser(data);
+            props.postCard(data);
             props.setIsOpen(false);
         } else {
             toast.error("All fields are required");
@@ -77,5 +77,5 @@ function CreateQuestion(props) {
     );
 }
 export default connect(null, {
-    postUser: postUser,
+    postCard: postCard,
 })(CreateQuestion);

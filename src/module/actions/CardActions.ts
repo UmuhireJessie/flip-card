@@ -34,40 +34,8 @@ export const getAllCards = () => async (dispatch) => {
   }
 };
 
-// export const getAllUserDriver = () => async (dispatch) => {
-//   try {
-//     const dt = await fetch(`${backendUrl}/users`, {
-//       headers,
-//     });
-//     const datas = await dt.json();
-//     if (dt.ok === false)
-//       dispatch(creator(GET_ALL_ERROR)), toast.error(datas.message);
-//     else {
-//       const userDrivers = datas.data.filter(({ role }) => role === "driver");
-//       dispatch(creator(GET_ALL_USERS_DRIVERS, userDrivers));
-//     }
-//   } catch (e) {
-//     if (e.message) {
-//       return toast.error(e.message);
-//     }
-//   }
-// };
 
-// export const getOneUser = (userId) => async (dispatch) => {
-//   try {
-//     const dt = await fetch(`${backendUrl}/users/` + userId, {
-//       headers,
-//     });
-//     const data = await dt.json();
-//     dispatch(creator(GET_ONE_USER, data));
-//   } catch (e) {
-//     if (e.response && e.response.data) {
-//       return toast.error(e.response.data.error);
-//     }
-//   }
-// };
-
-export const postUser = (data) => async (dispatch) => {
+export const postCard = (data) => async (dispatch) => {
   try {
     const dt = await fetch(`${backendUrl}`, {
       method: "POST",
@@ -88,9 +56,9 @@ export const postUser = (data) => async (dispatch) => {
   }
 };
 
-export const updateUser = (data, id) => async (dispatch) => {
+export const updateCard = (data, id) => async (dispatch) => {
   try {
-    const dt = await fetch(`${backendUrl}/users/` + id, {
+    const dt = await fetch(`${backendUrl}`, {
       method: "PATCH",
       body: JSON.stringify(data),
       headers,
@@ -105,14 +73,3 @@ export const updateUser = (data, id) => async (dispatch) => {
   }
 };
 
-// export const deleteUser = (id) => async (dispatch) => {
-//   try {
-//     const dt = await fetch(`${backendUrl}/users/` + id, {
-//       method: "DELETE",
-//       headers,
-//     });
-//     dispatch(creator(DELETE_USER, id));
-//   } catch (error) {
-//     if (error.message) return toast.error(error.message);
-//   }
-// };
