@@ -4,6 +4,7 @@ import "./Register.css";
 import { toast } from "react-toastify";
 import { connect } from "react-redux";
 import { registerUser } from "../../module/actions/UserAction";
+import { useNavigate } from "react-router-dom";
 
 const Register = (props) => {
     const [isLastName, setLastName] = useState("");
@@ -11,6 +12,7 @@ const Register = (props) => {
     const [isEmail, setEmail] = useState("");
     const [isPassword, setPassword] = useState("");
     const [error, setError] = useState({});
+    const redirect = useNavigate();
 
     const FormValidation = () => {
         if (isLastName == "") {
@@ -40,6 +42,7 @@ const Register = (props) => {
                 password: isPassword
             };
             props.registerUser(data);
+            redirect("/login");
         } else {
             toast.error("All fields are required");
         }

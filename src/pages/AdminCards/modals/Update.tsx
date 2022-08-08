@@ -24,7 +24,6 @@ function Update(props) {
         answer: isAnswer,
       };
       props.updateCard(Data, card.id);
-      toast.info("Card updated Successfully");
       props.setUpdate(false);
     } else {
       toast.error("Fill missing record");

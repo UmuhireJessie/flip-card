@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { useState, useEffect } from 'react';
 import Update from './modals/Update';
-import { getAllCards } from '../../module/actions/CardActions';
+import { getAllCards, deleteCard } from '../../module/actions/CardActions';
+import swal from "sweetalert";
+import { toast } from "react-toastify";
 
 function AdminCards(props) {
 
@@ -19,6 +21,21 @@ function AdminCards(props) {
     props.getAllCards();
   }, [])
   
+  const handleDelete = (cardId) => {
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this ",
+      icon: "warning",
+      buttons: ["Cancel", "Ok"],
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        props.deleteCard(cardId);
+        toast.success("Card delete Successfully");
+      } 
+    });
+  };
+
   console.log("/////////", props.isData.allCards)
   return (
     <>
@@ -64,6 +81,7 @@ function AdminCards(props) {
                 <Link
                   to="#"
                   className="delete-icon"
+                  onClick={(e) => handleDelete(value.id)}
                   >
                     <HiTrash />
                   </Link>
@@ -90,5 +108,6 @@ const mapState = ({ cardReducer }) => ({
 });
 
 export default connect(mapState, {
-  getAllCards: getAllCards
+  getAllCards: getAllCards,
+  deleteCard: deleteCard
 })(AdminCards);
