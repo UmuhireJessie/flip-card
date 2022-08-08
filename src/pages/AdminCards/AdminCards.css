@@ -1,0 +1,47 @@
+.table-card {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.btn-create {
+  margin-top: 7em;
+  margin-left: 15em;
+  padding: 7px 13px;
+  color:aliceblue;
+  background: #0a036b;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-create:hover {
+  background: #1306c9;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.table thead tr th,
+.table tbody tr td {
+  padding: 20px;
+  border: 1px solid rgb(35, 37, 44);
+}
+.table tbody tr:hover {
+  background-color: rgba(102, 104, 102, 0.11);
+}
+.edit-icon {
+    color: black;
+    margin-right: 2em;
+    font-size: 22px;
+}
+.edit-icon:hover {
+  color: rgb(97, 0, 97);
+}
+.delete-icon {
+    color: rgb(168, 6, 6);
+    font-size: 22px;
+}
+.delete-icon:hover {
+  color: rgb(255, 0, 0);
+}
