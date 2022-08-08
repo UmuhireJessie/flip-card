@@ -13,6 +13,7 @@ export const getAllCards = () => async (dispatch) => {
     }
   }
   `;
+  console.log("backendUrl: ", backendUrl)
   try {
     const dt = await fetch('https://flip-card-api.herokuapp.com/', {
       headers: {
